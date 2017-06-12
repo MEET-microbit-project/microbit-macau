@@ -22,7 +22,7 @@ play(0)
 while True:
     sleep(100)
 
-    if button_b.get_presses() > 0:
+    if button_a.get_presses() > 0:
         i = (i - 1) % len(pieces)
         play(i)
 
