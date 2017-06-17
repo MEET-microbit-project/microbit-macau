@@ -2,7 +2,7 @@ from microbit import *
 import random
 
 # number of time intensity of apple changes per movement of snake
-_FRAME_COUNT = 10
+_FRAME_COUNT = 14
 
 # Directions
 N = (-1, 0)
@@ -174,5 +174,5 @@ while True:
     else:
         display.show(Image.SAD)
 
-    while button_a.get_presses() + button_b.get_presses() == 0:
+    while button_a.was_pressed() or button_b.was_pressed():
         sleep(200)
