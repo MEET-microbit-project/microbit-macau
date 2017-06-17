@@ -23,11 +23,17 @@ if [ "$1" = "-h" ]; then
 
 else
 
-  # need root privelages for mounting
-  [ $(id -u) != "0" ] && exec sudo "$0" "$@"
+  if [ "$1" = "-mnt" ]; then
+    MOUNT_DIR="$2"
+    shift 2
+  else
+    # local mount folder
+    MOUNT_DIR="/media/$USER/MICROBIT"
+  fi
 
-  # local mount folder
-  MOUNT_DIR="/media/mathis/MICROBIT"
+  # need root privelages for mounting
+  [ $(id -u) != "0" ] && exec sudo "$0" "-mnt" "$MOUNT_DIR" "$@"
+
 
   # create local directory for mounting if it doesn't exist
   if [ -d $MOUNT_DIR ]; then
