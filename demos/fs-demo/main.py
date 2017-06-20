@@ -1,5 +1,6 @@
 import random
 import os
+import speech
 
 from microbit import *
 
@@ -10,4 +11,4 @@ if 'messages.txt' in os.listdir():
 
     while True:
         if button_a.was_pressed():
-            display.scroll(random.choice(messages))
+            speech.say(random.choice(messages))
