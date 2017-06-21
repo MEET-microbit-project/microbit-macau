@@ -82,6 +82,5 @@ fi
 
 if mount | grep "$MOUNT_DIR" > /dev/null; then
   # unmount MICROBIT and delete mount folder
-  umount $MOUNT_DIR
-  rmdir $MOUNT_DIR
+  umount "$MOUNT_DIR"
 fi
