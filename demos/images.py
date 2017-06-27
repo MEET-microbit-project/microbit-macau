@@ -19,7 +19,7 @@ i = 0
 display.show(getattr(Image, imgs[0]))
 
 while True:
-    sleep(100)
+    sleep(100 )
     
     if button_a.get_presses() > 0:
         i = (i - 1) % len(imgs)
