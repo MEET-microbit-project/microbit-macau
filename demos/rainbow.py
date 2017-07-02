@@ -31,8 +31,8 @@ while True:
         np[i+6] = rainbow[(i + shift) % len(rainbow)]
         np.show()
 
-        if abs(accelerometer.get_y()) >= 90:
-            shift += 1 if accelerometer.get_y() > 0 else -1
-            shift %= len(rainbow)
+    if abs(accelerometer.get_y()) >= 90:
+        shift += 1 if accelerometer.get_y() > 0 else -1
+        shift %= len(rainbow)
 
-        sleep(100)
+    sleep(100)
