@@ -1,4 +1,4 @@
-# Welcome to the <b> MEET Macau </b> - Micro:Bit project page!
+# Welcome to the Micro:Bit project page!
 
 In the course of a few weeks, you are going to learn how to program in the
 popular and widely used [Python](https://www.python.org/) programming language.
