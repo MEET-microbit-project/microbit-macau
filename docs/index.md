@@ -12,12 +12,14 @@ and compete with your fellow programmers in races.
 An online Python editor with support for some basic bit:bot controls can be
 found [here](./editor/editor.html).
 
-# [](#cheat-sheet) Overview of micro:bit commands
+* * *
+
 What follows is a short overview of the most important Python functions
 for the micro:bit. For a more guided introduction see the official
-[micropython documentation](https://microbit-micropython.readthedocs.io).
+[micropython documentation](https://microbit-micropython.readthedocs.io)
+for the microbit.
 
-## [](#microbit) Micro:Bit
+# [](#microbit) Micro:Bit
 All functionality is contained in a *module* (in other words a library) with the name `microbit`.
 In order to be able to use the microbit-specific functions below,
 include this line at the top of your program:
@@ -26,16 +28,16 @@ from microbit import *
 ```
 In English, this means *"import everything (*`*`*) from the `microbit` library"*.
 
-#### [](#sleep) sleep
+### [](#sleep) sleep
 Sometimes it is useful to make the micro:bit wait, and not do nothing for a while. You can do this by specifying a time in milliseconds (there are 1000 milliseconds in each second):
 ```python
 # sleep for 3 seconds
 sleep(3000)
 ```
 
-### [](#display) Display
+## [](#display) Display
 
-#### [](#scroll) scroll
+### [](#scroll) scroll
 You can scroll longer strings of text over the display:
 ```python
 display.scroll("Hello, World!")
@@ -47,7 +49,7 @@ a_number = 42
 display.scroll(str(a_number))
 ```
 
-#### [](#show) show
+### [](#show) show
 Show something statically on the display:
 ```python
 display.show("!")
@@ -66,7 +68,7 @@ my_images = ["Hello!", 42, Image.YES]
 display.show(my_images, loop=True, delay=100)
 ```
 
-### [](#buttons) Buttons
+## [](#buttons) Buttons
 There are two buttons on the micro:bit, `button_a` and `button_b`.
 `button_a.get_presses()` returns the number of times button A was pressed since the the last time this function was called.
 ```python
@@ -76,7 +78,7 @@ while True:
     display.show(str(button_b.get_presses()))
 ```
 
-### [](#pins) Input / Output Pins
+## [](#pins) Input / Output Pins
 The micro:bit pins are accessible through `pin0`, `pin1`, ..., `pin22`.
 ```python
 # set pin1 to 1 (on)
@@ -93,7 +95,7 @@ pin0.write_analog(1023)
 pin0.read_analog()  # integer number from 0 up to 1023
 ```
 
-### [](#music) Music
+## [](#music) Music
 Music controls are in a separate module called `music`.
 ```python
 import music
@@ -103,7 +105,7 @@ music.play(music.NYAN, pin=0, loop=false)
 A list of available music can be found
 [here](https://microbit-micropython.readthedocs.io/en/latest/tutorials/music.html#music).
 
-### [](#accelerometer) Accelerometer
+## [](#accelerometer) Accelerometer
 The accelerometer can be used to determine how the micro:bit
 is oriented in space.
 ```python
@@ -116,7 +118,7 @@ reading_z = accelerometer.get_z()
 For more detail and an overview of the axes see
 [this article](http://microbit-challenges.readthedocs.io/en/latest/tutorials/accelerometer.html).
 
-#### [](#gestures) gestures
+### [](#gestures) gestures
 The micro:bit automatically detects the following gestures:
 
 `"up", "down", "left", "right", "face up", "face down", "freefall", "3g", "6g", "8g", "shake"`
@@ -128,9 +130,9 @@ accelerometer.is_gesture("face up")
 accelerometer.was_gesture("shake")
 ```
 
-## [](#python) Python
+# [](#python) Python
 
-### [](#random) Random
+## [](#random) Random
 There is a python library for generating (pseudo-) random numbers:
 ```python
 import random
@@ -143,9 +145,9 @@ my_list = ["left", "right"]
 random_direction = random.choice(my_list)
 ```
 
-## [](#bitbot) Bit:Bot
+# [](#bitbot) Bit:Bot
 
-### [](#bitbot-module) Bitbot
+## [](#bitbot-module) Bitbot
 To make the beginning easier, we added a module `bitbot` with some basic
 functionality. See the [advanced](#bitbot-advanced) section
 to learn how to write these out manually, using the pins.
@@ -161,7 +163,7 @@ brightness = bitbot.brightness()  # returns a tuple, e.g. (70.2, 70.1)
 brightness_left = brightness[0]  # brightness in percent
 ```
 
-### [](#buzzer) Buzzer
+## [](#buzzer) Buzzer
 The buzzer is connected to pin 14.
 ```python
 # make an annoying buzzing sound for 2 seconds
@@ -170,7 +172,7 @@ sleep(2000)
 pin14.write_digital(0)  # don't forget to turn it off again
 ```
 
-### [](#line) Line Detection
+## [](#line) Line Detection
 The line detectors are connected to the same pins as the buttons.
 This means you can't use the buttons while connected to the
 bit:bot, but it also means line detection is very easy:
@@ -180,7 +182,7 @@ if button_a.is_pressed():
     # there is a line on the left, move right
 ```
 
-### [](#neopixel) Neopixel
+## [](#neopixel) Neopixel
 There is a dedicated `neopixel` module. The relevant pin is pin 13 and there are
 12 pixel in the Neopixel array.
 ```python
@@ -191,4 +193,4 @@ np[3] = (255, 0, 0)  # set pin with index 3 to all red
 np.show()  # show the changes that were made
 ```
 
-### [](#advanced) Advanced
+## [](#advanced) Advanced
