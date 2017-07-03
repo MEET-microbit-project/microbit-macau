@@ -128,7 +128,7 @@ random_direction = random.choice(my_list)
 
 ## [](#bitbot-module)Bitbot Module
 To make the beginning easier, we added a module `bitbot` with some basic
-functionality. See the [advanced](#bitbot-advanced) section
+functionality. See the [advanced](#advanced) section
 to learn how to write these out manually, using the pins.
 ```python
 import bitbot
