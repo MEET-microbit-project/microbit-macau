@@ -183,3 +183,16 @@ The direction pins are set to a digital value, `0` for forward, `1` for backward
 The speed pins are set to an analog value (between 0 and 1023).
 - If the motor is going forwards, higher values make it move faster.
 - If the motor is set to go backwards, lower values make it move faster.
+```python
+# move forwards with maximal speed
+pin8.write_digital(0)
+pin12.write_digital(0)
+pin0.write_analog(1023)
+pin1.write_analog(1023)
+
+# move backwards with maximal speed
+pin8.write_digital(1)
+pin12.write_digital(1)
+pin0.write_analog(0)
+pin1.write_analog(0)
+```
