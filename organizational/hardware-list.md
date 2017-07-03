@@ -1,11 +1,12 @@
-Hardware I Have:
-----------------
+## External hardware
+- micro:bit (4)
+- bit:bot (2)
+- circuit plug board; no soldering (2)
+- small speaker (2)
+- LEDs, appropriate resistors, wires
 
-- 1 x micro:bit
-- 1 x Bit:Bot
-- LEDs and appropriate resistors (sufficient)
 
-- 2 x curcuit plug board (no soldering)
-
-- 2 x small speaker
-- about 6 buttons
+## This should be available on-site
+- computers with USB plug (at least one per two students; preferably one each)
+    - operating system doesn't matter as long as it supports a modern browser
+- Wi-Fi connection (minimally a local network - important to know beforehand)
