@@ -184,7 +184,7 @@ if button_a.is_pressed():
 
 ## [](#neopixel) Neopixel
 There is a dedicated `neopixel` module. The relevant pin is pin 13 and there are
-12 pixel in the Neopixel array.
+12 pixels in the Neopixel array.
 ```python
 import neopixel
 
@@ -193,4 +193,13 @@ np[3] = (255, 0, 0)  # set pin with index 3 to all red
 np.show()  # show the changes that were made
 ```
 
-## [](#advanced) Advanced
+## [](#bitbot-advanced) Advanced
+| motor | Direction Pin | Speed Pin |
+|:------|:--------------|:----------|
+| left  | `pin8`        | `pin0`    |
+| right | `pin12`       | `pin1`    |
+
+The direction pins are set to a digital value, `0` for forward, `1` for backwards.
+The speed pins are set to an analog value (between 0 and 1023).
+- If the motor is going forwards, higher values make it move faster.
+- If the motor is set to go backwards, lower values make it move faster.
