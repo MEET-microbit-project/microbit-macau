@@ -78,11 +78,10 @@ Unfortunately, this kind approach would have two mayor problems:
 
 -   **Human spoken languages are ambiguous**
 
-![](media/image1.gif){width="2.422222222222222in"
-height="2.9541666666666666in"}Already in your lifetime you have
-encountered a situation when the same sentence said for two different
-people may be interpreted/understood differently: For instance, sentence
-“Alice saw the Bob with a telescope” could have two meanings:
+Already in your lifetime you have encountered a situation when the same 
+sentence said for two different people may be interpreted/understood 
+differently: For instance, sentence “Alice saw the Bob with a telescope” 
+could have two meanings:
 
 -   Alice saw Bob who was carrying a telescope
 
@@ -108,7 +107,7 @@ language represented by two symbols 0 and 1. This language is favourable
 by the computers because it can easily understand it. Computers
 understand high voltage in the chip as 1 and low voltage as 0. From
 these two symbols (similarly to Morse code) more complicated stuff can
-be built for instance Figure 1. Show how using 8 bits (2 bytes) you can
+be built for instance, using 8 bits (2 bytes) you can
 represent all English language characters using ASCII system.
 
 Using these symbols every machine has its own instruction set for which
@@ -167,8 +166,8 @@ language. One of the most notable things created using Python is
 TensorFlow library produced by Google™ which is currently the most
 widely used machine learning platform in the world.
 
-Writing Python code
--------------------
+Writing Python 
+---------------
 
 To write Python on any computer and to interpret it you need to install
 Python on your device. You can do it by going to
@@ -183,8 +182,8 @@ development environments) like PyCharm or Visual Studio should be used.
 In this Handout you can find a getting starting guide which explains how
 to connect micro:bit to your computer. []{#_Toc486272597 .anchor}
 
-Learning the Python
--------------------
+Learning Python
+----------------
 
 The detail overview of the exercises we fill be doing together can be
 found in the project website
@@ -232,8 +231,7 @@ develop the foundations of computer science in the early-to-mid
 nineteenth century, his most successful projects being the difference
 engine and the analytical engine.
 
-![](media/image2.jpeg){width="3.420138888888889in"
-height="2.563888888888889in"}Automata continued to provide entertainment
+Automata continued to provide entertainment
 during the 19^th^ century, but coterminous with this period was the
 development of steam-powered machines and engines that helped to make
 manufacturing much more efficient and quick. Factories began to employ
