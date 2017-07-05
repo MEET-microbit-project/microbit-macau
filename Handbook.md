@@ -2,8 +2,8 @@ Getting started
 ===============
 
 Welcome on board joining our journey in the world of Computer Science.
-In these couple of weeks we promise to do our very best to assist you
-and guide though challenges you will face. Do not worry if you have not
+In these couple of weeks, we promise to do our very best to assist you
+and guide through challenges you will face. Do not worry if you have not
 done any programming before because everything will be though along the
 way. We encourage you to be curious in the upcoming weeks, ask questions
 for which we will try to find the best answers.
@@ -18,7 +18,7 @@ All the files related our project and more you can find at course
 website:
 [macau.computer-science.party](http://macau.computer-science.party/)
 
-During our project, we will be using BBC Microbits – ARM-based
+During our project, we will be using BBC micro:bits – ARM-based
 micro-controller used for computer science education around the world.
 
 Introduction to programming with Python
@@ -34,9 +34,9 @@ government, and research establishments. Some performed astronomical
 calculations for calendars, others ballistic tables for the military.
 
 After the 1920s, the expression *computing machine* referred to any
-machine that performed the work of a human computer, especially those in
+a machine that performed the work of a human computer, especially those in
 accordance with effective methods of the Church-Turing thesis. The
-thesis states that a mathematical method is effective if it could be set
+the thesis states that a mathematical method is effective if it could be set
 out as a list of instructions able to be followed by a human clerk with
 paper and pencil, for as long as necessary, and without ingenuity or
 insight.
@@ -55,7 +55,7 @@ values stored by digital machines were not bound to physical properties
 like analog devices, a logical computer, based on digital equipment, was
 able to do anything that could be described "purely mechanical." The
 theoretical Turing Machine, created by Alan Turing, is a hypothetical
-device theorized to study the properties of such hardware.
+device theorised to study the properties of such hardware.
 
 Programming languages
 ---------------------
@@ -68,18 +68,18 @@ our world works. For instance, if you ask your school calculator (which
 by itself is a computer too) to divide 5 by 0 you will get an error. It
 won’t try to calculate the result because someone (a programmer) told
 him that division by 0 is not a valid action in the world of mathematics
-and informed the machine what to do in situation like this.
+and informed the machine what to do in the situation like this.
 
 When communicating with the computer we not only encounter the absence
 of its understanding but the problem of simple communication to tell it
 what to do. In our utopia kind of world, we could love for computers to
 understand human language (English, Cantonese, Swahili etc.).
-Unfortunately, this kind approach would have two mayor problems:
+Unfortunately, this kind approach would have two major problems:
 
 -   **Human spoken languages are ambiguous**
 
 Already in your lifetime you have encountered a situation when the same 
-sentence said for two different people may be interpreted/understood 
+the sentence said for two different people may be interpreted/understood 
 differently: For instance, sentence “Alice saw the Bob with a telescope” 
 could have two meanings:
 
@@ -87,31 +87,33 @@ could have two meanings:
 
 -   Alice saw Bob using a telescope as a device to do so.
 
-Both interpretations are valid (though first one seems more probable to
-be the real one from our English understanding). Computer would not know
+Both interpretations are valid (though the first one seems more probable to
+be the real one from our English understanding). The computer would not know
 which one to choose in this case. Moreover, this is not the only
 sentence in English that would have such a behaviour so just listing
 what to do in each situation would be labour intensive. Besides that,
 there would be even greater problems to maintain machines understanding
 of English because it is an actively spoken human language for which the
 number of valid words and grammar expressions change constantly. To cope
-with these changes machine would have actively increase its English
+with these changes machine would have actively increased its English
 understanding along the way, but as mentioned before a machine cannot do
 it by itself, it needs human intervention.
 
 -   **Computers by itself cannot understand these languages.**
 
-Since the invention of a first computer, every computer ever build uses
+Since the invention of the first computer, every computer ever builds uses
 binary as its main/native communication language. Binary is a special
 language represented by two symbols 0 and 1. This language is favourable
 by the computers because it can easily understand it. Computers
 understand high voltage in the chip as 1 and low voltage as 0. From
 these two symbols (similarly to Morse code) more complicated stuff can
-be built for instance, using 8 bits (2 bytes) you can
+be built, for instance, using 8 bits (2 bytes) you can
 represent all English language characters using ASCII system.
 
+![alt text](https://s-media-cache-ak0.pinimg.com/736x/95/d9/bd/95d9bda9be33661d5dc8e24f8f1c40cc--brownie-ideas-technology-gadgets.jpg "ASCII symbol system")
+
 Using these symbols every machine has its own instruction set for which
-each member is represented with 32 bits (64 bit for newer computers).
+each member is represented by 32 bits (64 bit for newer computers).
 These instructions say for a computer when executing one or other kind
 of encrypted program. Instruction describes simple stuff like adding two
 numbers or storing the result in the memory but by just using these you
@@ -120,32 +122,32 @@ can already do quite a complicated stuff.
 Unfortunately, the biggest drawback of a machine language that it cannot
 be understood by humans you can easily check what an instruction
 01001011010110010010011110010101 does but writing them by itself would
-be a tedious stuff. For this reason, an assembly languages were
+be a tedious stuff. For this reason, assembly languages were
 introduced. Assembly language is a language which has a one-to-one
 correspondence with a machine language. The main difference between it
 and machine language is that it encodes the meaning of the instruction
 which cannot be seen in machine language. The translation from an
 assembly language to machine language is done by a special program
-called assembler in a process of assembling (program is making other
+called assembler in a process of assembling ( the program is making other
 programs, is it not cool?)
 
-Assembly language was a short-term solution. It was realized that just
+Assembly language was a short-term solution. It was realised that just
 to produce a simple task like taking two numbers from the user input
 adding them up and printing the result takes a bunch of assembly
 instructions, hence the new level of abstraction was introduced to
 encapsulate the common stuff done by everyone. This led to the
 development of High-level programming language such as C, FORTRAN, and
-Pascal which are still used for today. The translation from high level
+Pascal which is still used for today. The translation from high level
 language such as C to assembly language such as MIPS is done by yet
 another program called compiler in the process called compiler (seems
 familiar?)
 
-Of course, the abstractions and solutions given by one language sometime
-did not offered the solutions needed for everyone but more specialized
-and convenient programming language are created every day. Currently
+Of course, the abstractions and solutions given by one language sometimes
+did not offer the solutions needed for everyone but more specialised
+and convenient programming language are created every day. Currently,
 there are thousands of programming language suited more for one or other
 purpose and given different kind of functionality with its own
-trade-offs. Currently the most popular and widely used programming
+trade-offs. Currently, the most popular and widely used programming
 languages in the world are Java, C++, and Python which we are going to
 explore in our project!
 
@@ -155,8 +157,8 @@ Overview of Python
 Python is a powerful high-level, object-oriented programming language
 created by Guido van Rossum. It has simple easy-to-use syntax, making it
 the perfect language for someone trying to learn computer programming
-for the first time. It is a general-purpose language which has wide
-range of applications from Web development (like: Django and Bottle),
+for the first time. It is a general-purpose language which has a wide
+range of applications from Web development (Django and Bottle),
 scientific and mathematical computing (Orange, SymPy, NumPy) to desktop
 graphical user Interfaces (Pygame, Panda3D). The syntax of the language
 is clean and length of the code is relatively short. It's fun to work in
@@ -174,23 +176,20 @@ Python on your device. You can do it by going to
 [www.python.org](http://www.python.org) and following instructions for a
 specific operating system you are using. After installing Python on your
 device, you will need a text editor in which you will be writing your
-code to compile. The one that we will be using is Mu which is designed
-for programming with micro:bit . You can download it from
-[codewith.mu](codewith.mu). In the real-world applications other, more
+code to compile. The one that we will be using is Mu integrated into this website so
+down worry about this at the moment. In the real-world applications other, more
 sophisticated text editors such as ATOM or even IDE’s (integrated
 development environments) like PyCharm or Visual Studio should be used.
-In this Handout you can find a getting starting guide which explains how
-to connect micro:bit to your computer. []{#_Toc486272597 .anchor}
 
 Learning Python
 ----------------
 
-The detail overview of the exercises we fill be doing together can be
-found in the project website
+The detailed overview of the exercises we fill be doing together can be
+found on the project website
 [macau.computer-science.party](macau.computer-science.party)
 
 There are plenty resources to expand your understanding and skills in
-Python after this project. Here we give an example of couple of
+Python after this project. Here we give an example of a couple of
 resources to do so:
 
 -   [docs.python.org](docs.python.org) official Python tutorials created
@@ -228,7 +227,7 @@ The Industrial Revolution and the increased focus on mathematics,
 engineering and science in England in the Victorian age added to the
 momentum towards actual robotics. Charles Babbage (1791-1871) worked to
 develop the foundations of computer science in the early-to-mid
-nineteenth century, his most successful projects being the difference
+the nineteenth century, his most successful projects being the difference
 engine and the analytical engine.
 
 Automata continued to provide entertainment
@@ -240,7 +239,7 @@ many products. 
 
  In 1920, Karel Capek published his play R.U.R. (Rossum’s Universal
 Robots), which introduced the word “robot.” It was taken from an old
-Slavic word that meant something akin to “monotonous or forced labor.”
+Slavic word that meant something akin to “monotonous or forced labour.”
 However, it was thirty years before the first industrial robot went to
 work. In the 1950s, George Devol designed the Unimate, a robotic arm
 device that transported die castings in a General Motors plant in New
@@ -249,7 +248,7 @@ Jersey, which started work in 1961. 
 Robotics became a burgeoning science and more money was invested. Robots
 spread to Japan, South Korea and many parts of Europe over the last half
 century. Additionally, robots have found a place in other spheres, as
-toys and entertainment, military weapons, search and rescue assistants,
+toys and entertainment, military weapons, search and rescue assistance,
 and many other jobs. Essentially, as programming and technology improve,
 robots find their way into many jobs that in the past have been too
 dangerous, dull or impossible for humans to achieve. Indeed, robots are
@@ -290,7 +289,7 @@ station.
 ### Sensing
 
 Did you ever wonder why most demos show robots manipulating objects with
-bright colours? Robots still have a hard time recognizing everyday
+bright colours? Robots still have a hard time recognising everyday
 objects. Even though various algorithms have proven to be effective to
 label images with labels such as “black cat” or “white rose”, robots
 need to know how the object is used and how you can interact with it. A
@@ -314,10 +313,10 @@ manipulators often requires precise planning.
 
 ### Cognition
 
-Current robots typically use well determined algorithms that allow them
+Current robots typically use well-determined algorithms that allow them
 to complete specific tasks, for example navigating from point A to point
 B, or moving an object on an assembly line. Designing collaborative
-robots or robots for the home, will increasingly require them to
+robots or robots for the home will increasingly require them to
 understand new environments and learn on the job. What seems like a
 simple task to us, could turn into a complex cognitive exercise for a
 robot.
@@ -328,7 +327,7 @@ understanding. The forest trail navigation mostly crunches the data from
 lots of forest trail images and performs the correct motor commands in
 response. This is closer to a human learning to balance a poll on the
 palm of their hand through practice, rather than the development of a
-real understanding for the laws of physics.
+real understanding of the laws of physics.
 
 ### Unstructured environments
 
@@ -339,14 +338,14 @@ the open air, and underwater. On the other side, there are very few
 robots that operate autonomously in the home environment, other than
 vacuum cleaner robots.
 
-Overview of bit:bot
+Overview of bit: bot
 -------------------
 
-A great way to engage with both robotics and python is through the usage
+A great way to engage with both robotics and Python is through the usage
 of bit:bot – a robotic car powered with micro:bit. Bit:bot has the
 following features:
 
--   2 micro-metal gear motors. Both fully controllable in software, for
+-   2 micro metal gear motors. Both fully controllable in software, for
     both speed and direction
 
 -   Wheels with rubber tyres for maximum grip
